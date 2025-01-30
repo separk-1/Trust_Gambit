@@ -6,7 +6,9 @@
 ## Features
 - 🏆 **Trust Game Modeling**: AI provides recommendations with a probabilistic correctness, and players decide whether to trust it.
 - 🔄 **Trust Calibration System**: Players either receive AI reliability information explicitly or learn it through experience.
-- 📊 **Data Collection & Analysis**: Tracks user decisions and trust evolution for research purposes.
+- 📊 **Data Collection & Analysis**: Tracks user decisions, trust evolution, and AI interaction patterns for research purposes.
+- 🎛️ **Dynamic Settings**: Players can customize game parameters, including AI reliability, reward values, and maximum attempts.
+- 📊 **Dashboard UI**: During gameplay, real-time game settings and statistics (trust level, rewards, attempts) are displayed.
 - 🌐 **Web-Based Interface**: Built using React for frontend and FastAPI for backend.
 
 ## Folder Structure
@@ -60,6 +62,18 @@ Once both backend and frontend are running, open your browser and visit:
 ```
 http://localhost:3000
 ```
+
+---
+
+## **Gameplay & UI**
+- 🎛️ **Game Settings UI**:
+  - Players can configure **System Accuracy**, **Max Attempts**, **Win Reward**, and **Lose Penalty** before starting the game.
+  - Once the game starts, settings are locked and displayed in the dashboard.
+- 📊 **Dashboard UI**:
+  - Displays **real-time game statistics**, including **Trust Level, Total Reward, Attempts Remaining**, and AI reliability.
+- 🎭 **Game Decision UI**:
+  - Players make a **Trust or Doubt decision** based on AI's recommendation.
+  - The game provides instant feedback on the correctness of the decision.
 
 ---
 
