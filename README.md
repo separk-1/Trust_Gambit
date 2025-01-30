@@ -77,6 +77,38 @@ http://localhost:3000
 
 ---
 
+## **Next Steps & Improvements**
+Although **Trust Gambit** provides a fundamental trust-based decision game, additional features are required to align it more closely with research goals.
+
+### 🔥 **Priority Improvements**
+1️⃣ **Add Hidden Trust Mode**  
+   - Players should have an option to **hide AI’s reliability (System Accuracy)** and learn through experience.  
+   - This will allow studying **trust calibration over time.**
+
+2️⃣ **Differentiate Trust Failure vs. Doubt Failure**  
+   - Implement distinct penalties for:  
+     - **"Trust but AI was wrong"** → Higher penalty  
+     - **"Doubt but AI was right"** → Lower penalty  
+   - This differentiation will help analyze **trust evolution dynamics.**
+
+3️⃣ **Dynamic Reward Structure**  
+   - Currently, rewards are fixed, but **gradual reward decay or adaptive rewards should be implemented** to examine trust behavior under changing incentives.
+
+4️⃣ **User-Perceived Trust vs. Actual AI Trust Analysis**  
+   - Implement a feature where users estimate **how trustworthy they think the AI is** and compare this with actual AI trustworthiness.
+
+5️⃣ **Reinforcement Learning & Trust Strategy Modeling**  
+   - Log user interactions and study how users **optimize their trust decisions over multiple trials**.  
+   - This will enable **strategy modeling and potential AI-driven feedback mechanisms.**
+
+### 🚀 **Development Roadmap**
+- ✅ **Basic trust game mechanics implemented**  
+- 🔄 **Currently improving settings UI & dashboard**  
+- 🛠 **Next: Add Hidden Trust Mode & Trust-Doubt failure differentiation**  
+- 📊 **Future: Implement Reinforcement Learning analysis**  
+
+---
+
 ## **Troubleshooting**
 ### **Backend Issues**
 - If FastAPI doesn’t start, make sure you're in the correct environment:
