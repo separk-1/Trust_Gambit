@@ -21,26 +21,73 @@ trust_gambit/
 ## Installation & Setup
 
 ### 1️⃣ **Backend Setup (FastAPI)**
-Ensure Python 3.8+ is installed. Then, install dependencies and start the backend server:
+Ensure Python 3.10+ is installed. Then, create a virtual environment and install dependencies:
 ```bash
+conda create -n trust_gambit python=3.10
+conda activate trust_gambit
+
 cd backend
-pip install -r requirements.txt
+pip install -r ../requirements.txt
+```
+
+Run the FastAPI backend:
+```bash
 uvicorn main:app --reload
 ```
 
+Test the API:
+- Open **http://127.0.0.1:8000/docs** to see the interactive API documentation.
+
+---
+
 ### 2️⃣ **Frontend Setup (React)**
-Ensure Node.js 16+ is installed. Then, install dependencies and start the frontend:
+Ensure Node.js 18+ is installed. Then, install dependencies and start the frontend:
 ```bash
 cd frontend
 npm install
 npm start
 ```
 
+If you see security warnings, you can run:
+```bash
+npm audit fix
+```
+
+---
+
 ### 3️⃣ **Run the Game**
 Once both backend and frontend are running, open your browser and visit:
 ```
 http://localhost:3000
 ```
+
+---
+
+## **Troubleshooting**
+### **Backend Issues**
+- If FastAPI doesn’t start, make sure you're in the correct environment:
+  ```bash
+  conda activate trust_gambit
+  ```
+- Ensure required dependencies are installed:
+  ```bash
+  pip install -r ../requirements.txt
+  ```
+- If React cannot fetch data, check if FastAPI is running:
+  ```bash
+  ps aux | grep uvicorn
+  ```
+
+### **Frontend Issues**
+- If `npm start` doesn't work, try reinstalling dependencies:
+  ```bash
+  rm -rf node_modules package-lock.json
+  npm install
+  npm start
+  ```
+- If the UI is blank, ensure `frontend/src/App.js` has valid content.
+
+---
 
 ## Technologies Used
 - **Frontend:** React, TailwindCSS
