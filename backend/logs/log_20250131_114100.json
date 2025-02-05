@@ -1,0 +1,84 @@
+{
+    "log": [
+        {
+            "attempt": 1,
+            "decision": "doubt",
+            "aiSuccess": false,
+            "humanSuccess": true,
+            "trustLevel": 100,
+            "reward": 10
+        },
+        {
+            "attempt": 2,
+            "decision": "doubt",
+            "aiSuccess": true,
+            "humanSuccess": false,
+            "trustLevel": 50,
+            "reward": 0
+        },
+        {
+            "attempt": 3,
+            "decision": "doubt",
+            "aiSuccess": false,
+            "humanSuccess": true,
+            "trustLevel": 100,
+            "reward": 10
+        },
+        {
+            "attempt": 4,
+            "decision": "doubt",
+            "aiSuccess": true,
+            "humanSuccess": false,
+            "trustLevel": 50,
+            "reward": 0
+        },
+        {
+            "attempt": 5,
+            "decision": "doubt",
+            "aiSuccess": true,
+            "humanSuccess": false,
+            "trustLevel": 0,
+            "reward": -10
+        },
+        {
+            "attempt": 6,
+            "decision": "doubt",
+            "aiSuccess": false,
+            "humanSuccess": true,
+            "trustLevel": 50,
+            "reward": 0
+        },
+        {
+            "attempt": 7,
+            "decision": "doubt",
+            "aiSuccess": true,
+            "humanSuccess": false,
+            "trustLevel": 0,
+            "reward": -10
+        },
+        {
+            "attempt": 8,
+            "decision": "doubt",
+            "aiSuccess": true,
+            "humanSuccess": false,
+            "trustLevel": 0,
+            "reward": -20
+        },
+        {
+            "attempt": 9,
+            "decision": "doubt",
+            "aiSuccess": true,
+            "humanSuccess": false,
+            "trustLevel": 0,
+            "reward": -30
+        },
+        {
+            "attempt": 10,
+            "decision": "doubt",
+            "aiSuccess": true,
+            "humanSuccess": false,
+            "trustLevel": 0,
+            "reward": -40
+        }
+    ]
+}
